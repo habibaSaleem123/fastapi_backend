@@ -1,0 +1,38 @@
+/* Tailwind Core */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ReUI Configs */
+@import './config.reui.css';
+
+/** Global Styles **/
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+
+  *:focus-visible {
+    outline-color: var(--ring);
+    border-radius: 0.125rem;
+    box-shadow: none;
+    outline-width: 2px;
+    outline-offset: 3px;
+    transition: none !important;
+  }
+}
+
+/* Metronic Components  */
+/* Temporarily commented out to fix TailwindCSS issues */
+/* @import './components/image-input.css'; */
+/* @import './components/apexcharts.css'; */
+/* @import './components/leaflet.css'; */
+/* @import './components/rating.css'; */
+/* @import './components/scrollable.css'; */
+
+/* Demos */
+/* @import './demos/demo1.css'; */
+
+/** Dark/Light Theme Variant - TailwindCSS v3 doesn't support @custom-variant **/
+/* @custom-variant dark (&:is(.dark *)); */
+/* @custom-variant light (&:not(.dark *)); */

@@ -1,0 +1,22 @@
+# Node
+node_modules/
+**/node_modules/
+npm-debug.log*
+yarn-error.log*
+.pnp.*
+.pnpm-debug.log*
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+.env.*
+
+# OS / IDE
+.DS_Store
+*.swp
+.idea/
+.vscode/
